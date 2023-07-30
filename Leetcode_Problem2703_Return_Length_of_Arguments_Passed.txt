@@ -1,0 +1,29 @@
+/**
+ * @return {number}
+ */
+var argumentsLength = function(...args) {
+    return args.length;
+};
+
+/**
+ * argumentsLength(1, 2, 3); // 3
+ */  
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+/**
+ * @return {number}
+ */
+var argumentsLength = function(...args) {
+    var i = 0;
+    for( i in args)
+    {
+        i++;
+    }
+    return i;
+};
+
+/**
+ * argumentsLength(1, 2, 3); // 3
+ */
